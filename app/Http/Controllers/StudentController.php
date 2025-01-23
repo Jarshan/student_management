@@ -63,7 +63,7 @@ class StudentController extends Controller
         $student = Student::find($id);
         $input = $request->all();
         $student->update($input);
-        return redirect('student')->with('flash_message', 'student Updated!');
+        return redirect('students')->with('flash_message', 'student Updated!');
     }
 
     /**
@@ -71,6 +71,9 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Student::destroy($id);
+        return redirect('students')->with('flash_message', 'Student deleted!'); 
     }
 }
+
+
