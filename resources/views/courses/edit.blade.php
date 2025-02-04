@@ -11,7 +11,7 @@
         <input type="hidden" name="id" id="id" value="{{$courses->id}}" id="id" />
         <label>Name</label></br>
         <input type="text" name="name" id="name" value="{{$courses->name}}" class="form-control"></br>
-        <label>Syllabyus</label></br>
+        <label>Syllabus</label></br>
         <input type="text" name="syllabus" id="syllabus" value="{{$courses->address}}" class="form-control"></br>
         <label>Duration</label></br>
         <input type="text" name="duration" id="duration" value="{{$courses->mobile}}" class="form-control"></br>
