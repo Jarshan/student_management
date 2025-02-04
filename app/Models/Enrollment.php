@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Course extends Model
+
+class Enrollment extends Model
 {
-    protected $table = 'courses';
+    protected $table = 'enrollments';
     protected $primaryKey = 'id';
-    protected $fillable = ['name', 'syllabus', 'duration'];
+    protected $fillable = ['enroll_no', 'batch_id', 'student_id', 'join_date', 'fee'];
     use HasFactory;
 }

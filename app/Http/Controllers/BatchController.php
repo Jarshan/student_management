@@ -31,7 +31,7 @@ class BatchController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request): RedirectResponse
-    {
+    { 
         $input = $request->all();
         Batch::create($input);
         return redirect('batches')->with('flash_message', 'Batches Addedd!');
